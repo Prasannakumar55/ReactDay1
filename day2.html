@@ -1,0 +1,81 @@
+1 . What is the Difference between React and React native ?
+            Which one is library or framework?
+
+            React is a javascript library and the React native is a
+            javascript framework both are developed by the facebook.
+            React is a single page application and it is used to build
+            web-applications and the React native is a popular javascript mobile 
+            app framework. we can build the both Andriod and ios mobile apps.
+
+        2 . What is the package name you are using for routing ?
+
+            React Router is a standard library for routing in React.
+            install the React-router-dom modules for using in project
+            React Router Dom is used to build single-page applications.
+            applications that have many pages but the page is never refreshed 
+            this is the major advantage of react-routers
+
+        3 . Routing Implementation ?
+
+            create the individual components like Home, Student, Contact and each component 
+            import a link tag from the react-router-dom to Navbar
+                {Home}
+                {Students}
+                {Contact}
+           
+            Add the all links to the all components
+                <Link to='Home'> Home </Link>
+                <Link to='Students'> Students </Link>
+                <Link to='Contact'> Contact </Link>
+            In app.js import the all components and add the Navbar add after the BrowserRouter because it will show in the top of the webpage      
+            <BrowserRouter>
+              <Navbar/>
+                <Routes>
+                        <Route path='/Home' element={< Home />} />
+                        <Route path='/Students' element={< Students />} />
+                        <Route path='/Contact' element={< Contact />} />
+                    </Route>
+                </Routes>
+            <BrowserRouter>
+
+        finally path is refreshed to the component of the element without refreshing 
+
+        4 . How do you pass data from parent to child ?
+
+        Following are the steps to pass data from child component to parent component
+        In the parent component, create a callback function. This callback s
+        function will return the data from the child component.
+        Pass the callback function to the child as a props from the parent component.
+        The child component calls the parent callback function using props 
+        and passes the data to the parent component.
+        import the chile
+
+        5 . What is lazy loading in React ?
+
+            Lazy loading is the process that delaying load or initialization 
+            of data or objects until they're actually needed to 
+            improve performance and save the memory.
+
+            Example : 
+
+            const Home = React.lazy(() => import("./Home"));
+
+        6 . Difference between Stateful and stateless Component
+
+            Stateful :
+
+            In React if we use a state in a perticular component that is called 
+            the Stateful like state, setstate etc
+
+            stateless :
+
+            In React if we dosen't use any state in a perticular component 
+            that is called the stateless like props etc
+
+        7 . How do you switch one component to another, Conditional Rendering
+
+            react-routers are the one to switch the one component to another.
+            Conditional rendering in React works the same way conditions work in JavaScript. 
+            Use JavaScript operators like if or the conditional operator to create elements 
+            representing the current state, and let React update the UI to match them.
+            The if else statemebt and ternary operators are the  one for using  Conditional rendering
